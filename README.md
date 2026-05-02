@@ -1,23 +1,55 @@
-# Base Proof of Action (MVP)
+# Base Action Console
 
-A verifiable protocol for recording off-chain actions on-chain. Build trust, verify intent, and unlock new possibilities on the Base network.
+A premium, modular utility console for the Base ecosystem. 
 
 ## Overview
 
-Base Proof of Action allows users and protocols to securely generate and verify proofs for off-chain activities (e.g., GitHub contributions, social media engagement, off-chain identity checks) without revealing sensitive data. Built specifically for the Base ecosystem, it ensures fast, low-cost, and reliable on-chain verification.
+Base Action Console is a multi-module developer and user utility command center for Base. It provides high-performance on-chain and off-chain tools to streamline daily interactions, verify contributions, deploy smart contracts, mint assets, and experiment with cutting-edge protocol sandboxes.
+
+The repository is currently structured as a premium high-fidelity modular shell, ready for smart contract hookups and full production logic.
+
+## Current Modules
+
+The Console features 7 core modules built to maximize productivity on Base:
+1. **Overview**: Command center dashboard displaying top-level summary metrics, quick actions, and recent activity.
+2. **Daily**: Consistency check-in streak tracker and daily transaction logging.
+3. **Proofs**: Verifiable protocol for recording off-chain actions (such as GitHub pull requests or commits) on-chain.
+4. **Deploy**: Fast contract deployer for launching standard ERC-20 tokens or ERC-721 NFT collections.
+5. **Mint**: Direct asset claim, faucet claiming, and custom URI metadata testing interface.
+6. **Trade**: Swap utility to exchange developer assets instantly via a testnet rate simulator.
+7. **x402 Lab**: Sandbox testing lab for observing experimental complex transaction scenarios.
+
+## Development Status & Priorities
+
+This repository contains the high-fidelity UI and routing infrastructure.
+- **Next Step / Priority**: The **Proofs** module is the first real logic priority and will receive production logic next.
+- **Current Status**: Complete visual and routing shell with high-fidelity modules in place. Compiles fully and static-renders correctly.
+
+## Architecture & Information Architecture
+
+The information architecture centers around a unified layout with a persistent sidebar that supports module swapping without deep navigation overhead.
+
+```
+  Base Action Console
+  ├── Overview (Command Center & Activity Feed)
+  ├── Daily (Action Check-In Streak & Daily GM/GN txs)
+  ├── Proofs (GitHub Attestations & Actions)
+  ├── Deploy (ERC-20 & ERC-721 Contract Deployers)
+  ├── Mint (Asset claim & URI Faucets)
+  ├── Trade (High-performance testnet swap interface)
+  └── x402 Lab (Advanced sandbox scenarios)
+```
 
 ## Tech Stack
 
-This repository serves as the initial MVP shell and frontend application.
-
 - **Framework**: Next.js (App Router)
 - **Language**: TypeScript
-- **Styling**: Tailwind CSS (Dark Mode default)
+- **Styling**: Tailwind CSS & Vanilla CSS (Dark Mode default)
 - **Deployment**: Vercel-ready
 
 ## Local Development
 
-To run the project locally, ensure you have Node.js and npm installed.
+To run the project locally, ensure you have Node.js installed.
 
 1. **Install dependencies**:
    ```bash
@@ -35,20 +67,11 @@ To run the project locally, ensure you have Node.js and npm installed.
 ## Project Structure
 
 - `/src/app`: Next.js App Router pages and layout.
-  - `/src/app/page.tsx`: The landing page.
-  - `/src/app/app/page.tsx`: The MVP dashboard / proof creation shell.
+  - `/src/app/page.tsx`: Landing page.
+  - `/src/app/app`: Console module views and shell.
 - `/src/components`: Reusable UI and layout components.
-  - `/src/components/ui`: Core building blocks (`Button`, `Card`, etc.).
-  - `/src/components/layout`: Global components (`Navbar`).
-
-## Roadmap & Next Steps
-
-This repository currently contains the initial UI shell. The following features will be built in upcoming phases:
-
-1. **Wallet Integration**: Implement Wagmi/Viem or Coinbase Wallet SDK for connecting wallets.
-2. **Smart Contracts**: Develop the core Proof Verification contracts and deploy them to Base Sepolia.
-3. **Backend / Attestation Service**: Create a secure attestation service or integrate with existing protocols (like EAS - Ethereum Attestation Service) to issue proofs.
-4. **Farcaster Integration**: Allow users to share generated proofs directly to Farcaster using Frames.
+  - `/src/components/ui`: Core primitives (`Button`, `Card`, etc.).
+  - `/src/components/layout`: Global elements (`Navbar`, `AppSidebar`).
 
 ## License
 

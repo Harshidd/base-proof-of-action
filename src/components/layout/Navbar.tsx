@@ -11,12 +11,12 @@ export const Navbar = () => {
               <div className="w-2 h-2 rounded-sm bg-white" />
             </div>
             <span className="font-semibold text-sm tracking-tight text-foreground group-hover:text-base-blue transition-colors">
-              Proof of Action
+              Base Action Console
             </span>
           </Link>
           <nav className="hidden md:flex items-center gap-6">
             <Link href="/app" className="text-sm font-medium text-foreground-muted hover:text-foreground transition-colors">
-              Dashboard
+              Console
             </Link>
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-foreground-muted hover:text-foreground transition-colors">
               GitHub

@@ -8,18 +8,17 @@ export default function Home() {
       <section className="w-full max-w-[1200px] px-6 pt-24 pb-16 text-left md:text-center flex flex-col items-start md:items-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface border border-border-subtle text-xs font-medium text-foreground-muted mb-6 shadow-sm">
           <span className="w-2 h-2 rounded-full bg-base-blue shadow-[0_0_8px_rgba(0,82,255,0.8)]"></span>
-          Base Proof of Action • MVP
+          Base Action Console • MVP
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 leading-tight max-w-3xl">
-          Turn your off-chain actions into on-chain proofs.
+          A premium modular utility console for Base.
         </h1>
         <p className="text-lg text-foreground-muted mb-8 max-w-2xl leading-relaxed">
-          A lightweight utility to cryptographically verify your GitHub contributions and social posts. 
-          Provide a link, verify ownership, and mint an immutable attestation on Base.
+          Verify actions, deploy contracts, mint assets, and test advanced x402 sandbox protocols from one unified, high-performance interface.
         </p>
         <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
           <Button href="/app" variant="primary" size="lg" className="w-full sm:w-auto">
-            Open Dashboard
+            Open Console
           </Button>
           <Button href="https://github.com" target="_blank" variant="secondary" size="lg" className="w-full sm:w-auto">
             <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 mr-2">
@@ -226,7 +225,7 @@ export default function Home() {
           
           <div className="relative z-10 shrink-0">
             <Button href="/app" variant="primary" size="lg" className="w-full sm:w-auto shadow-[0_0_20px_rgba(0,82,255,0.3)]">
-              Open Dashboard
+              Open Console
             </Button>
           </div>
         </div>
